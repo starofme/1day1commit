@@ -1,0 +1,8 @@
+증감 연산자는 위치에 따라서 계산되는 값이 다르다.
+int num1 = 2;
+int num2 = 2;
+int num3, num4;
+
+num3 = num1++ // num3 = 2, num1 = 3
+num4 = ++num2 // num4 = 3, num2 = 3
+
