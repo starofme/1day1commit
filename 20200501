@@ -1,8 +1,31 @@
+C.1
 증감 연산자는 위치에 따라서 계산되는 값이 다르다.
+
 int num1 = 2;
 int num2 = 2;
-int num3, num4;
+int num3; 
+int num4;
 
-num3 = num1++ // num3 = 2, num1 = 3
-num4 = ++num2 // num4 = 3, num2 = 3
+num3 = num1++ // num3 = 2
+num4 = ++num2 // num4 = 3
 
+---------------------------------------
+C.2
+continue의 경우에는 루프안에서 해당 위치를 건너 뛰고 진행 하는 것이 아닌
+해당 루프를 다음단계(아래 for문의 경우 i++한 후 for loop 처음)로 다시 시작하는것이다.
+
+for (int = i; i< 10; i++){
+  if (i>5) continue;
+  printf("value: %d\n", i)
+}
+printf("Done\n");
+
+결과는 아래와 같다.
+value: 1
+value: 2
+value: 3
+value: 4
+value: 5
+Done
+
+--------------------------------------------
